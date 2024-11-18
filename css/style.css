@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"League Spartan", sans-serif;
+    font-size: 1.3rem;
+    background-color: rgb(226, 229, 231);
+}
+
+h1{
+    font-size: 6rem;
+}
+h2{
+    font-size: 5rem;
+}
+h3{
+    font-size: 4rem;
+}
+h4{
+    font-size: 3rem;
+}
+h5{
+    font-size: 2rem;
+}
+
+ul{
+    list-style-type:none
+    
+}
+a{
+    text-decoration:none;
+}
+button{
+    background-color: rgba(0, 0, 255, 0.731);
+    border-radius: 0.5rem;
+    padding: 10px 15px;
+    font-size: inherit;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    background-color: rgb(248, 248, 248);
+    box-shadow: 2px 5px 2px rgb(248, 248, 248);
+    border-radius: 10px;
+}
+
+.nav-center{
+    display: none;
+}
+
+.nav-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#navbar1{
+    width: 90vw;
+    max-width: 1010px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-transform: capitalize;
+}
+
+#navbar1 .logo{
+    padding: 20px;
+}
+#navbars{
+    width: 90vw;
+    max-width: 1120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#navbars .logo{
+    padding: 20px;
+}
+#navbar{
+    height: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: height 0.6s ease-in-out;
+    overflow: hidden;   
+}
+#navbar .navlinks{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#navbar .navlinks .nav-links{
+    display:block;
+    width: 100%;
+    padding: 1rem;
+    border-top: 1px solid black;
+    text-align: center;
+    text-transform: capitalize;
+}
+.show{
+    height: auto;
+}
+
+main{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#contact0{
+    width: 90vw;
+    max-width: 1120px;
+    height:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s linear;
+    overflow: hidden;
+}
+  #cinfo{
+    width:50%;
+  }
+
+  #cinfo h4{
+    color: black;
+    margin-bottom: 30px;
+  }
+
+  #cinfo p{
+    color: black;
+    margin-bottom: 20px;
+    font-weight: 200;
+    font-size:17px ;
+  }
+  #form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+    width:40%;
+    border-radius: 10px;
+    height: 300px;
+    
+    /* box-shadow: 1px 4px 8px black; */
+  }
+  #form form{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  #form  form label{
+       padding: 5px;
+  }
+  #form  form input{
+       width: 240px;
+       border-radius: 5px;
+       height: 40px;
+       outline: none;
+       border: none;
+  }
+  #form  form fieldset{
+    width: 240px;
+    height: 70px;
+    border-radius: 5px;
+    outline: none;
+       border: none;
+       background-color: white;
+    
+  }
+  #form  form button{
+    margin-top: 10px;
+    width: 100px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+#mainbanner{
+    width: 90vw;
+    max-width: 1120px;
+    height: 40vh;
+    background-image: url('../assets/main.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+#mainbanner h1,h4{
+    color: white;
+    padding-top: 1.2rem;
+    font-weight: 200;
+    text-transform: capitalize;
+
+}
+
+#content{
+    width: 90vw;
+    max-width: 1120px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+#recipes{
+    width: 15%;
+    text-transform: capitalize;
+}
+#recipes h5{
+    padding: 7px;
+    font-weight: 200;
+}
+#sidebar{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+#sidebar a{
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    text-transform: capitalize;
+}
+
+#container{
+    width: 83%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+     gap:10px;
+    flex-wrap:wrap ;
+
+}
+
+#container a{
+    width: 303px;
+    border-radius:10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#container a img{
+    width: 100%;
+    height: 200px;
+    border-radius:10px;
+    margin-bottom: 10px;
+} 
+
+#container a h5{
+    display: block;
+    width: 100%;
+    margin-top: 6px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+#container a p{
+    display: block;
+    width: 100%;
+    margin-top: 6px;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 200;
+}
+
+footer{
+    width: 100%;
+    background-color: rgb(41, 39, 39);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+     color: rgb(218, 218, 232);
+     font-weight:100;
+     font-size: 20px;
+}
+
+/* -----------------------*/
+/* homepage media query */
+/* -----------------------*/
+
+@media (min-width:724px) and (max-width:830px) {
+    .nav-center{
+        display: block;
+    }
+    .nav-main{
+        display: none;
+    }
+    #content{
+        width: 90vw;
+        max-width: 1120px;
+        display: flex;
+        flex-direction:column;
+
+    }
+
+    #sidebar{
+        display: flex;
+        align-items: none;
+        justify-content: none;
+        flex-direction: row;
+        gap: 20px;
+    }
+    #sidebar a{
+        display: block;
+        width: 100%;
+        padding: 0.5rem;
+        text-transform: capitalize;
+    }
+   
+
+}
+
+/* --------------- */
+/* aboutpage       */
+/* --------------- */
+
+#about{
+    width: 90vw;
+    max-width: 1120px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+#ainfo{
+    width: 40%;
+    height: 400px;
+    border-radius: 2px solid black;
+}  
+
+#ainfo h3{
+    margin-top: 60px;
+    font-size: 40px;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    color: black;
+}
+
+#ainfo p{
+    font-size: 18px;
+    padding: 5px 0;
+    margin-bottom: 10px;
+    color: black;
+}
+#aimg{
+    width: 50%; 
+    height: 400px;
+    border-radius: 2px solid black;
+}
+
+#aimg img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+#container2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+     gap:10px;
+    flex-wrap:wrap ;
+    margin: 10px;
+
+}
+
+#container2 a{
+    width: 303px;
+    border-radius:10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#container2 a img{
+    width: 100%;
+    height: 200px;
+    border-radius:10px;
+    margin-bottom: 10px;
+} 
+
+#container2 a h5{
+    display: block;
+    width: 100%;
+    margin-top: 6px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+#container2 a p{
+    display: block;
+    width: 100%;
+    margin-top: 6px;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 200;
+}
+
+#h4 h4{
+    color: black;
+    font-size: 24px;
+}
+
+
+/* tags page */
+
+#tags{
+    width:90vw;
+    max-width:1120px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+    /* background-color: blue; */
+}
+
+ .tag{
+    display: flex;
+    width: 300px;
+    height: 100px;
+    background-color: rgba(16, 65, 103, 0.7);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tag:hover{
+    background-color: rgba(16, 65, 103, 1);
+}
+.tag h5,p{
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+#main{
+    width:90vw;
+    max-width:1120px;
+    height: 40vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+
